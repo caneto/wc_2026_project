@@ -1,19 +1,14 @@
-
 import 'package:material_ui/material_ui.dart';
+import 'package:wc_2026_mobile/ui/core/theme/app_theme.dart';
+import 'package:wc_2026_mobile/ui/splash/splash_screen.dart';
 
 void main() {
-  runApp(Container());
+  runApp(const MainApp());
 }
 
 class const MainApp({super.key}) extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello, World!'),
-        ),
-      ),
-    );
+    return MaterialApp(theme: AppTheme.light, home: SplashScreen());
   }
 }
